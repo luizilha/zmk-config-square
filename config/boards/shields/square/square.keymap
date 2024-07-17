@@ -1,0 +1,75 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
+&mt {
+    tapping-term-ms = <600>;
+};
+
+/ {
+      combos {
+          compatible = "zmk,combos";
+          combo_bspc {
+              timeout-ms = <50>;
+              key-positions = <16 17>;
+              bindings = <&kp BSPC>;
+          };
+          combo_esc {
+              timeout-ms = <50>;
+              key-positions = <1 2>;
+              bindings = <&kp ESC>;
+          };
+          combo_spc {
+              timeout-ms = <50>;
+              key-positions = <12 13>;
+              bindings = <&kp SPACE>;
+          };
+          combo_caps {
+              timeout-ms = <50>;
+              key-positions = <2 3>;
+              bindings = <&kp CAPS>;
+          };
+      };	
+
+        keymap {
+                compatible = "zmk,keymap";
+
+                default_layer {
+                        bindings = <
+                           &lt 3 Q  &kp W        &kp F   &kp P      &kp G   &kp J &kp L  &kp U     &kp Y         &kp BSPC   
+                           &lt 1 A  &mt LCTRL R  &kp S   &mt LGUI T &kp D   &kp H &kp N  &kp E     &mt RCTRL I   &lt 2 O
+                           &mt LSHFT Z  &kp X  &kp C   &kp V  &lt 1 SPACE   &lt 2 TAB  &kp M &kp B  &kp K &mt RSHFT RET
+                        >;
+                };
+                lower_layer {
+                        bindings = <
+                         &kp EXCL     &kp AT &kp HASH  &kp DLLR &kp PRCNT  &trans &kp BSLH  &trans &kp PLUS     &kp EQUAL
+                         &kp ESC      &trans &trans    &kp DQT  &trans     &trans &kp SLASH &trans &kp QUESTION &kp SEMI
+                         &out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR  &trans &trans &kp LT &kp GT &trans 
+                        >;
+                };
+
+                raise_layer {
+                        bindings = < 
+                         &kp PIPE   &kp AMPS  &kp LBKT  &kp RBKT &kp UNDER  &kp STAR &kp LPAR &kp RPAR &kp LBRC  &kp RBRC
+                         &kp CARET  &kp TILDE &kp GRAVE &kp SQT  &kp MINUS  &kp LEFT &kp DOWN &kp UP &kp RIGHT  &kp COLON
+                         &trans     &trans &kp RA(COMMA) &trans  &trans     &trans   &kp COLON &kp COMMA &kp DOT &trans 
+                       >;
+                };
+
+                num_layer {
+                        bindings = <
+                          &lt 3 Q    &kp W &kp W &kp P &kp G     &kp J   &kp N7  &kp N8   &kp N9   &trans   
+                          &kp TAB    &kp A &kp S &trans &kp D    &kp N0  &kp N4  &kp N5   &kp N6   &trans
+                          &trans &kp X &kp C &trans  &trans      &kp N0  &kp N1  &kp N2   &kp N3 &trans
+                        >;
+                };
+        };
+};
