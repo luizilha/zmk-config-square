@@ -44,14 +44,14 @@
                 default_layer {
                         bindings = <
                            &lt 3 Q  &kp W        &kp F   &kp P      &kp G   &kp J &kp L  &kp U     &kp Y         &kp BSPC   
-                           &lt 1 A  &mt LCTRL R  &kp S   &mt LGUI T &kp D   &kp H &kp N  &kp E     &mt RCTRL I   &lt 2 O
-                           &mt LSHFT Z  &kp X  &kp C   &kp V  &lt 1 SPACE   &lt 2 TAB  &kp M &kp B  &kp K &mt RSHFT RET
+                           &mt LSHFT A  &mt LCTRL R  &kp S   &mt LGUI T &kp D   &kp H &kp N  &kp E     &mt RCTRL I &mt RSHFT O
+                           &kp Z  &kp X  &kp C   &kp V  &lt 1 SPACE   &lt 2 TAB  &kp M &kp B  &kp K &mt RSHFT RET
                         >;
                 };
                 lower_layer {
                         bindings = <
-                         &kp EXCL     &kp AT &kp HASH  &kp DLLR &kp PRCNT  &trans &kp BSLH  &trans &kp PLUS     &kp EQUAL
-                         &kp ESC      &trans &trans    &kp DQT  &trans     &trans &kp SLASH &trans &kp QUESTION &kp SEMI
+                         &kp EXCL     &kp AT &kp HASH  &kp DLLR &kp PRCNT  &trans &kp SLASH &kp BSLH &kp PLUS   &kp EQUAL
+                         &kp ESC      &trans &trans    &kp DQT  &trans     &trans &kp COLON  &kp COMMA &kp QUESTION &kp SEMI
                          &out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR  &trans &trans &kp LT &kp GT &trans 
                         >;
                 };
