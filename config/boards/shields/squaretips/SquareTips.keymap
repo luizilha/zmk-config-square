@@ -51,15 +51,15 @@
                 lower_layer {
                         bindings = <
                          &kp EXCL     &kp AT &kp HASH  &kp DLLR &kp PRCNT  &kp STAR &kp LPAR &kp RPAR &kp MINUS &kp EQUAL    
-                         &kp ESC      &trans &trans    &trans  &trans     &trans &kp COMMA  &kp DOT &trans &kp SEMI
+                         &trans     &trans &trans    &trans  &trans     &trans &kp COMMA  &kp DOT &trans &kp SEMI
                          &out OUT_TOG &trans &trans    &trans &trans  &trans &trans &trans &trans &trans 
                         >;
                 };
 
                 raise_layer {
-                        bindings = < 
-                         &kp PIPE   &kp AMPS  &kp LBKT  &kp RBKT &kp UNDER  &trans &kp SLASH  &kp BSLH &trans &trans
-                         &kp CARET  &trans &kp GRAVE &kp SQT  &trans  &kp LEFT &kp DOWN &kp UP &kp RIGHT   &trans
+                        bindings = <
+                         &kp PIPE   &kp AMPS  &kp LBKT  &kp RBKT &trans  &trans &kp SLASH  &kp BSLH &trans &trans
+                         &trans &kp CARET &kp GRAVE &kp SQT  &trans  &kp LEFT &kp DOWN &kp UP &kp RIGHT   &trans
                          &trans &trans &kp RA(COMMA) &trans &trans &trans &trans &trans &trans &trans 
                        >;
                 };
