@@ -39,7 +39,7 @@
                 default_layer {
                         bindings = <
                            &lt 3 Q  &kp W        &kp F   &kp P      &kp G   &kp J &kp L  &kp U     &kp Y         &kp BSPC   
-                           &lt 1 A  &mt LCTRL R  &kp S   &mt LGUI T &kp D   &kp H &kp N  &mt LALT E &mt RCTRL I &mt RSHFT O
+                           &lt 1 A  &mt LCTRL R  &kp S   &mt LGUI T &kp D   &kp H &kp N  &mt LALT E &mt RCTRL I  &kp O
                            &mt LSHFT Z  &kp X  &kp C   &kp V  &lt 1 SPACE   &lt 2 TAB  &kp M &kp B  &kp K &mt RSHFT RET
                         >;
                 };
@@ -53,7 +53,7 @@
 
                 raise_layer {
                         bindings = <
-                         &kp PIPE   &kp AMPS  &kp LBKT  &kp RBKT &trans  &trans &kp SLASH  &kp BSLH &trans &trans
+                         &kp PIPE   &kp AMPS  &kp LBKT  &kp RBKT &trans  &trans &kp SLASH  &kp BSLH &kp LS(LBKT) &kp LS(RBKT)
                          &trans &kp CARET &kp GRAVE &kp SQT  &trans  &kp LEFT &kp DOWN &kp UP &kp RIGHT   &trans
                          &trans &trans &kp RA(COMMA) &trans &trans &trans &trans &trans &trans &trans 
                        >;
