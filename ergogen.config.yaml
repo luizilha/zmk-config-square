@@ -1,0 +1,96 @@
+points:
+  zones:
+    matrix:
+      columns:
+        pinky:
+        ring:
+        middle:
+        index:
+        inner:
+        pinky2:
+        ring2:
+        middle2:
+        index2:
+        inner2:
+      rows:
+        home:
+        top:
+        num:
+outlines:
+  raw:
+    - what: rectangle
+      where: true
+      asym: both
+      size: [1cx,1cy]
+      corner: 1
+  panel:
+    - what: outline
+      name: raw
+      fillet: 0.5
+  switch_cutouts:
+    - what: rectangle
+      where: true
+      asym: left
+      size: 14
+      bound: false
+  switch_plate:
+    main:
+      what: outline
+      name: panel
+      fillet: 0.5
+    keyholes:
+      what: outline
+      name: switch_cutouts
+      operation: subtract   
+  c1:
+    - what: circle
+      radius: 1
+      where: 
+        - ref: matrix_pinky_home
+          shift: [-12, -12]
+    - what: circle
+      radius: 1
+      where: 
+        - ref: matrix_inner2_home
+          shift: [12, -12]
+    - what: circle
+      radius: 1
+      where: 
+        - ref: matrix_inner2_num
+          shift: [12, 24]
+    - what: circle
+      radius: 1
+      where: 
+        - ref: matrix_pinky_num
+          shift: [-12, 24]
+  c2:
+    - what: rectangle
+      size: [20, 20]
+      where: 
+        - ref: matrix_inner_home
+          shift: [-70, 55]
+  case:
+    - what: rectangle
+      size: [190, 72]
+      where: 
+        - ref: matrix_index_home
+          shift: [28, 25]
+  caseB:
+    - what: rectangle
+      size: [200, 82]
+      where: 
+        - ref: matrix_index_home
+          shift: [28.5, 25]
+  caseAAA:
+    - what: rectangle
+      size: [87, 5]
+      where: 
+        - ref: matrix_inner_num
+          shift: [5, 17]
+  keydesig: [
+    caseB, -switch_cutouts, -caseAAA, -c1
+  ]
+  keybottom: [
+    caseB, -caseAAA, -c1
+  ]
+  comb: [caseB, -case, -c1]
