@@ -10,16 +10,17 @@
 #include <dt-bindings/zmk/outputs.h>
 
 
+/ {
 
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
                         bindings = <
-                                                    &kp 8   &kp 9   
-                                &kp S              &kp 4      &kp 5   &kp 6
-                           &kp Z  &kp X  &kp C     &kp 1  &kp 2 &kp 3
+                                                               &kp 8   &kp 9   
+                                 &kp W                  &kp 4  &kp 5   &kp 6
+                           &kp A  &kp S  &kp D          &kp 1  &kp 2   &kp 3
                         >;
                 };
         };
-
+};
