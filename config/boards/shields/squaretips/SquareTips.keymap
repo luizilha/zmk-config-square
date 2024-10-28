@@ -14,59 +14,9 @@
 };
 
 / {
-      combos {
-          compatible = "zmk,combos";
-          combo_bspc {
-              timeout-ms = <50>;
-              key-positions = <16 17>;
-              bindings = <&kp BSPC>;
-          };
-          combo_esc {
-              timeout-ms = <50>;
-              key-positions = <1 2>;
-              bindings = <&kp ESC>;
-          };
-          combo_spc {
-              timeout-ms = <50>;
-              key-positions = <12 13>;
-              bindings = <&kp SPACE>;
-          };
-      };	
 
         keymap {
                 compatible = "zmk,keymap";
-
-                default_layer {
-                        bindings = <
-                           &lt 3 Q  &kp W        &kp F   &kp P      &kp G   &kp J &kp L  &kp U     &kp Y         &kp BSPC   
-                           &lt 1 A  &mt LCTRL R  &kp S   &mt LGUI T &kp D   &kp H &kp N  &mt LALT E &mt RCTRL I  &kp O
-                           &mt LSHFT Z  &kp X  &kp C   &kp V  &lt 1 SPACE   &lt 2 TAB  &kp M &kp B  &kp K &mt RSHFT RET
-                        >;
-                };
-                lower_layer {
-                        bindings = <
-                         &kp EXCL     &kp AT &kp HASH  &kp DLLR &kp PRCNT  &kp STAR &kp LPAR &kp RPAR &kp MINUS &kp EQUAL    
-                         &trans     &trans &trans    &trans  &trans     &trans &kp COMMA  &kp DOT &trans &kp SEMI
-                         &trans &trans &trans    &trans &trans  &trans &trans &trans &trans &trans 
-                        >;
-                };
-
-                raise_layer {
-                        bindings = <
-                         &kp PIPE   &kp AMPS  &kp LBKT  &kp RBKT &trans  &trans &kp SLASH  &kp BSLH &kp LS(LBKT) &kp LS(RBKT)
-                         &trans &kp CARET &kp GRAVE &kp SQT  &trans  &kp LEFT &kp DOWN &kp UP &kp RIGHT   &trans
-                         &trans &trans &kp RA(COMMA) &trans &trans &trans &trans &trans &trans &trans 
-                       >;
-                };
-
-                num_layer {
-                        bindings = <
-                          &lt 3 Q    &kp Q &kp W &kp E &kp R     &kp J   &kp N7  &kp N8   &kp N9    &out OUT_TOG
-                          &kp TAB    &kp A &kp S &kp D &kp F    &kp N0  &kp N4  &kp N5   &kp N6     &bt BT_SEL 0
-                          &bt BT_CLR &kp X &kp C &kp V  &tog 4      &kp N0  &kp N1  &kp N2   &kp N3 &bt BT_SEL 1
-                        >;
-
-                };
 
                 game_layer {
                         bindings = <
