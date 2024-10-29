@@ -17,6 +17,7 @@
               timeout-ms = <50>;
               key-positions = <2 5 8>;
               bindings = <&kp BSPC>;
+          };
         };
 
         keymap {
