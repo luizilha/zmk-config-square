@@ -13,10 +13,15 @@
 / {
         combos {
           compatible = "zmk,combos";
-          combo_bspc {
+          combo_btclear {
               timeout-ms = <50>;
               key-positions = <2 5 8>;
-              bindings = <&kp BSPC>;
+              bindings = <&bt BT_CLR_ALL>;
+          };
+          combo_out {
+              timeout-ms = <50>;
+              key-positions = <0 6 9>;
+              bindings = <&out OUT_TOG>;
           };
         };
 
