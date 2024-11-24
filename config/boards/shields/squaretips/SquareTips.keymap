@@ -21,11 +21,6 @@
               key-positions = <16 17>;
               bindings = <&kp TAB>;
           };
-          combo_esc {
-              timeout-ms = <50>;
-              key-positions = <1 2>;
-              bindings = <&kp ESC>;
-          };
           combo_spc {
               timeout-ms = <50>;
               key-positions = <12 13>;
@@ -38,15 +33,15 @@
 
                 default_layer {
                         bindings = <
-                           &lt 3 Q  &kp W        &kp F   &kp P      &kp G   &kp J &kp L  &kp U     &kp Y         &kp BSPC   
-                           &lt 1 A  &mt LCTRL R  &kp S   &mt LGUI T &kp D   &kp H &kp N  &mt LALT E &mt RCTRL I  &kp O
-                           &mt LSHFT Z  &kp X  &kp C   &kp V  &lt 1 SPACE   &lt 2 TAB  &kp M &kp B  &kp K &mt RSHFT RET
+                           &lt 3 Q     &kp W        &kp F   &kp P      &kp G   &kp J &kp L  &kp U      &kp Y       &kp BSPC   
+                           &lt 1 A     &mt LCTRL R  &kp S   &mt LGUI T &kp D   &kp H &kp N  &mt LALT E &mt RCTRL I &lt 2 O
+                           &mt LSHFT Z &kp X        &kp C   &kp V      &kp B   &kp K &kp M  &kp COMMA  &kp DOT     &mt RSHFT RET
                         >;
                 };
                 lower_layer {
                         bindings = <
-                         &kp EXCL     &kp AT &kp HASH  &kp DLLR &kp PRCNT  &kp STAR &kp LPAR &kp RPAR &kp MINUS &kp EQUAL    
-                         &trans     &trans &trans    &trans  &trans     &trans &kp COMMA  &kp DOT &trans &kp SEMI
+                         &trans     &kp AT &kp HASH  &kp DLLR &kp PRCNT  &kp STAR &kp LPAR &kp RPAR &kp MINUS &kp EQUAL    
+                         &trans     &trans &trans    &kp EXCL   &kp ESC     &trans &kp COMMA  &kp DOT &trans &kp SEMI
                          &trans &trans &trans    &trans &trans  &trans &trans &trans &trans &trans 
                         >;
                 };
