@@ -32,6 +32,12 @@
               key-positions = <21 22>;
               bindings = <&kp Z>;
           };
+
+          combo_enter {
+              timeout-ms = <50>;
+              key-positions = <17 18>;
+              bindings = <&kp RET>;
+          };
       };	
 
         keymap {
@@ -40,8 +46,8 @@
                 default_layer {
                         bindings = <
                            &lt 3 Q     &kp W        &kp F         &kp P      &kp G       &kp J         &kp L  &kp U       &kp Y       &kp BSPC   
-                           &lt 1 A     &mt LCTRL R  &mt RSHFT S   &mt LGUI T &kp D       &kp H         &kp N  &mt LALT E  &mt RCTRL I &lt 2 O
-                           &trans      &kp X        &kp C         &kp V      &kp SPACE   &mt RSHFT RET &kp M  &kp B       &kp K       &trans
+                           &lt 1 A     &mt LCTRL R  &kp S   &mt LGUI T &kp D       &kp H         &kp N  &mt LALT E  &mt RCTRL I &lt 2 O
+                           &trans      &mt LSHFT X        &kp C         &kp V      &kp SPACE   &mt RSHFT RET &kp M  &kp B       &mt RSHFT K   &trans
                         >;
                 };
                 lower_layer {
